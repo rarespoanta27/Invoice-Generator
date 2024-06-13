@@ -12,10 +12,10 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-const MONGODB_URI = 'mongodb://localhost:27017/facturiDB';
-const EMAIL_USER = 'rarespoanta10@gmail.com';
-const EMAIL_PASS = 'owwx nxgi zfte ixak';
-const JWT_SECRET = 'secretkey';
+const MONGODB_URI = 'YOUR_DB_URL';
+const EMAIL_USER = 'SEND_EMAIL';
+const EMAIL_PASS = 'PASSWORD_EMAIL';
+const JWT_SECRET = 'YOUR_SECRET_KEY';
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB'))
