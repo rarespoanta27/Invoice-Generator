@@ -38,7 +38,7 @@ function Login() {
   useEffect(() => {
     const fetchLocation = async (latitude, longitude) => {
       try {
-        const response = await axios.get(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=a405ebcc5d8449c592d9597ca3da52b4`);
+        const response = await axios.get(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=Open_Cage_APIKEY`);
         const locationData = response.data.results[0].components;
         setLocation(`📍 ${locationData.city}, ${locationData.country}`);
       } catch (error) {
